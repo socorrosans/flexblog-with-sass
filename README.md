@@ -1,2 +1,2 @@
 # flexblog-origamid
-A page using css-flexbox
+A page using sass / css
