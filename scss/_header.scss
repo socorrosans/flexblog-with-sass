@@ -1,0 +1,63 @@
+@import "colors";
+
+@mixin flex-properties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.superinfo-bg {
+  background: $detail-header;
+  color: $white;
+
+  div {
+    @include flex-properties;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  a, p {
+    color: $white;
+    margin: 10px;
+  }
+}
+
+header {
+  background-color: $header-footer;
+
+  a {
+    color: $white;
+  }
+
+  .menu {
+    @include flex-properties;
+    align-items: center;
+    max-width: 960px;
+    padding: 15px 0;
+    margin: 0 auto;
+  }
+
+  .menu-logo {
+    a {
+      font-size: 2.25em;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+  }
+
+  .menu-nav {
+    ul {
+      @include flex-properties;
+    }
+
+    a {
+      font-size: 1.25em;
+      display: block;
+      padding: 10px;
+
+      &:hover {
+        color: $detail-header;
+      }
+    }
+  }
+}
