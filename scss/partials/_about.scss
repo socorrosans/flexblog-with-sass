@@ -1,0 +1,42 @@
+@import "colors";
+@import "variables";
+@import "mixins";
+
+.introducao {
+  max-width: $container;
+  font-size: 3em;
+  line-height: 1;
+  padding: 60px 10px;
+  margin: 0 auto;
+}
+
+.sobre {
+  max-width: $container;
+  @include flex-properties(n);
+  padding: 60px 0;
+  margin: 0 auto;
+  border-top: 2px solid $header-footer;
+  border-bottom: 2px solid $header-footer;
+
+  .sobre-info {
+    flex: 2 1 300px;
+    margin: 0 10px;
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: .5em;
+    }
+  
+    p {
+      font-size: 1.25em;
+      margin-bottom: 1em;
+      line-height: 1.4;
+      color: $font-main;
+    }
+  }
+
+  img {
+    flex: 1 1 160px;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,12 @@
+@mixin border($color){
+  border-top: 8px solid $color;
+}
+
+@mixin flex-properties($align-X){
+  display: flex;
+  flex-wrap: wrap;
+
+  @if $align-X == space-between {
+    justify-content: $align-X;
+  }
+}

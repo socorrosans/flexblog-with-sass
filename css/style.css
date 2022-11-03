@@ -1,12 +1,12 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
 body {
-  font-family: "Nunito", Helvetica, Arial, sans-serif;
   color: #222222;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
 }
 body a {
   text-decoration: none;
@@ -15,8 +15,8 @@ body li {
   list-style-type: none;
 }
 body img {
-  display: block;
   max-width: 100%;
+  display: block;
 }
 
 .superinfo-bg {
@@ -45,8 +45,8 @@ header .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   max-width: 960px;
+  align-items: center;
   padding: 15px 0;
   margin: 0 auto;
 }
@@ -61,12 +61,84 @@ header .menu-nav ul {
   justify-content: space-between;
 }
 header .menu-nav a {
-  font-size: 1.25em;
   display: block;
+  font-size: 1.25em;
   padding: 10px;
 }
 header .menu-nav a:hover {
   color: #122ab2;
+}
+
+.introducao {
+  max-width: 960px;
+  font-size: 3em;
+  line-height: 1;
+  padding: 60px 10px;
+  margin: 0 auto;
+}
+
+.sobre {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  margin: 0 auto;
+  border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+}
+.sobre .sobre-info {
+  flex: 2 1 300px;
+  margin: 0 10px;
+}
+.sobre .sobre-info h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+.sobre .sobre-info p {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  color: #7c7c7c;
+}
+.sobre img {
+  flex: 1 1 160px;
+  margin: 10px;
+}
+
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+}
+.produtos h1 {
+  font-size: 3em;
+  margin: 0 10px 60px 10px;
+}
+.produtos h2 {
+  color: #a4a4a4;
+  font-size: 3em;
+  background: #f7f7f7;
+  padding: 60px 20px;
+}
+.produtos .produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.produtos .produtos-container .produtos-item {
+  flex: 1 1 175px;
+  margin: 10px;
+}
+
+.purple {
+  border-top: 8px solid #ae81ff;
+}
+
+.pink {
+  border-top: 8px solid #f9265e;
+}
+
+.blue {
+  border-top: 8px solid #66d9eb;
 }
 
 /*# sourceMappingURL=style.css.map */

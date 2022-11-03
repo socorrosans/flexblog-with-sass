@@ -1,18 +1,14 @@
 @import "colors";
-
-@mixin flex-properties {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+@import "variables";
+@import "mixins";
 
 .superinfo-bg {
   background: $detail-header;
   color: $white;
 
   div {
-    @include flex-properties;
-    max-width: 960px;
+    @include flex-properties(space-between);
+    max-width: $container;
     margin: 0 auto;
   }
 
@@ -30,9 +26,9 @@ header {
   }
 
   .menu {
-    @include flex-properties;
+    @include flex-properties(space-between);
+    max-width: $container;
     align-items: center;
-    max-width: 960px;
     padding: 15px 0;
     margin: 0 auto;
   }
@@ -47,12 +43,12 @@ header {
 
   .menu-nav {
     ul {
-      @include flex-properties;
+      @include flex-properties(space-between);
     }
 
     a {
-      font-size: 1.25em;
       display: block;
+      font-size: 1.25em;
       padding: 10px;
 
       &:hover {

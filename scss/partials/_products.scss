@@ -1,0 +1,42 @@
+@import "colors";
+@import "variables";
+@import "mixins";
+
+.produtos {
+  max-width: $container;
+  margin: 60px auto;
+
+  h1 {
+    font-size: 3em;
+    margin: 0 10px 60px 10px;
+  }
+
+  h2 {
+    color: $font-secondary;
+    font-size: 3em;
+    background: $white-secondary;
+    padding: 60px 20px;
+  }
+
+  .produtos-container {
+    @include flex-properties(n);
+    align-items: flex-end;
+
+    .produtos-item {
+      flex: 1 1 175px;
+      margin: 10px;
+    }
+  }
+}
+
+.purple {
+  @include border(#ae81ff);
+}
+
+.pink {
+  @include border(#f9265e);
+}
+
+.blue {
+  @include border(#66d9eb);
+}
