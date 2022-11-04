@@ -1,2 +1,2 @@
-# flexblog-origamid
+# flexblog
 A page using sass / css
