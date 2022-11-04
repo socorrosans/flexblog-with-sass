@@ -10,3 +10,9 @@
     justify-content: $align-X;
   }
 }
+
+@mixin screen-m{
+  @media(max-width: 800px){
+    @content;
+  }
+}
