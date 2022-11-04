@@ -11,8 +11,8 @@
   }
 }
 
-@mixin screen-m{
-  @media(max-width: 800px){
+@mixin screen($size){
+  @media(max-width: $size){
     @content;
   }
 }

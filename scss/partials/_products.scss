@@ -14,7 +14,7 @@
   h2 {
     color: $font-secondary;
     font-size: 3em;
-    background: $white-secondary;
+    background: $background-secondary;
     padding: 60px 20px;
   }
 
@@ -30,13 +30,13 @@
 }
 
 .purple {
-  @include border(#ae81ff);
+  @include border($intelligent);
 }
 
 .pink {
-  @include border(#f9265e);
+  @include border($compact);
 }
 
 .blue {
-  @include border(#66d9eb);
+  @include border($economic);
 }

@@ -1,0 +1,65 @@
+@import "colors";
+@import "mixins";
+@import "variables";
+
+.newsletter {
+  @include flex-properties(n);
+  background-color: $background-secondary;
+  padding: 60px calc((100% - 960px)/2);
+
+  .newsletter-info {
+    margin: 0 10px;
+    flex: 1 1 240px;
+
+    h1 {
+      color: $font-secondary;
+      font-size: 3em;
+    }
+
+    p {
+      max-width: 230px;
+      color: $font-main;
+      font-size: 1.25em;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.newsletter-form {
+    @include flex-properties(n);
+    align-self: center;
+    margin: 0 10px;
+    flex: 2 1 260px;
+
+    input {
+      color: $font-main;
+      font-family: "Nunito", Helvetica, Arial, sans-serif;
+      font-size: 1.25em;
+      font-style: italic;
+      background: transparent;
+      padding: 15px 10px;
+      margin: 0;
+      border: 4px solid $header-footer;
+      border-radius: 0px;
+      flex: 3 1 260px;
+    }
+
+    button{
+      color: $background-primary;
+      font-family: "Nunito", Helvetica, Arial, sans-serif;
+      font-size: 2.25em;
+      font-weight: bold;
+      background: $header-footer;
+      padding: 15px 10px;
+      margin: 0;
+      border: 0px;
+      text-transform: uppercase;
+      flex: 1 1 200px;
+      cursor: pointer;
+
+      @include screen(600px){
+        font-size: 1.5em  
+      }
+  }
+}

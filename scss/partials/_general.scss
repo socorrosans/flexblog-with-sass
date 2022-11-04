@@ -1,3 +1,5 @@
+@import "colors";
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -5,7 +7,7 @@
 }
 
 body {
-  color: #222222;
+  color: $font-body;
   font-family: "Nunito", Helvetica, Arial, sans-serif;
   
   a {

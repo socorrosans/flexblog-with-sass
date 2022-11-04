@@ -1,0 +1,46 @@
+@import "colors";
+@import "mixins";
+@import "variables";
+
+.qualidade {
+  max-width: $container;
+  @include flex-properties(n);
+  margin: 60px auto;
+}
+
+.qualidade-item {
+  margin: 20px 10px;
+  flex: 1 1 300px;
+
+  p {
+    color: $font-main;
+    font-size: 1.25em;
+    line-height: 1.4;
+  }
+
+  h2 {
+    color: $font-secondary;
+    font-size: 2.25em;
+    margin-bottom: 20px;
+
+    &::before {
+      display: inline-block;
+      content:'';
+      width: 8px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+
+  &:nth-of-type(3n+1) h2::before{
+    background: $intelligent;
+  }
+
+  &:nth-of-type(3n+2) h2::before{
+    background: $compact;
+  }
+
+  &:nth-of-type(3n+3) h2::before{
+    background: $economic;
+  }
+}
