@@ -6,19 +6,19 @@
   background: $detail-header;
   color: $background-primary;
 
-  div {
+  header {
     @include flex-properties(space-between);
     max-width: $container;
     margin: 0 auto;
-  }
-
-  a, p {
+    
+    a, p {
     color: $background-primary;
     margin: 10px;
+    }
   }
 }
 
-header {
+.menu-bg {
   background-color: $header-footer;
 
   a {

@@ -23,25 +23,25 @@ body img {
   background: #122ab2;
   color: #ffffff;
 }
-.superinfo-bg div {
+.superinfo-bg header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 960px;
   margin: 0 auto;
 }
-.superinfo-bg a, .superinfo-bg p {
+.superinfo-bg header a, .superinfo-bg header p {
   color: #ffffff;
   margin: 10px;
 }
 
-header {
+.menu-bg {
   background-color: #2c70ff;
 }
-header a {
+.menu-bg a {
   color: #ffffff;
 }
-header .menu {
+.menu-bg .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -50,22 +50,22 @@ header .menu {
   padding: 15px 0;
   margin: 0 auto;
 }
-header .menu-logo a {
+.menu-bg .menu-logo a {
   font-size: 2.25em;
   font-weight: bold;
   margin: 0 10px;
 }
-header .menu-nav ul {
+.menu-bg .menu-nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-header .menu-nav a {
+.menu-bg .menu-nav a {
   display: block;
   font-size: 1.25em;
   padding: 10px;
 }
-header .menu-nav a:hover {
+.menu-bg .menu-nav a:hover {
   color: #122ab2;
 }
 
@@ -152,14 +152,14 @@ header .menu-nav a:hover {
   .preco {
     padding-inline: 10px;
   }
-  .preco .preco-item:nth-child(3) {
-    order: -3;
+  .preco .preco-item:nth-child(1) {
+    order: 1;
   }
   .preco .preco-item:nth-child(2) {
-    order: -2;
+    order: 2;
   }
-  .preco .preco .preco-item:nth-child(2) {
-    order: -1;
+  .preco .preco-item:nth-child(3) {
+    order: 3;
   }
 }
 
